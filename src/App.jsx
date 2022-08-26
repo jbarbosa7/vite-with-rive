@@ -1,13 +1,17 @@
 import Rive from "@rive-app/react-canvas";
-import BouncingBall from './bouncing-ball.riv'
+import Basketball from './assets/basketball.riv'
+import ManInTheWind from './assets/man-in-the-wind.riv'
 
-import "./App.css";
+import "./App.sass";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello!</h1>
-      <Rive src={BouncingBall} width={500} height={500} />
+    <div>
+      <h1 className="title">My Rive Projects</h1>
+      <div className="projects-container">
+        <Rive src={Basketball} />
+        <Rive src={ManInTheWind} />
+      </div>
     </div>
   );
 }
